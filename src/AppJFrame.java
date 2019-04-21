@@ -76,6 +76,7 @@ public class AppJFrame extends JFrame{
 		gradeRoot.add(gradeCheck);
 		gradeRoot.add(lessonSelect);
 		grade = new JTree(gradeRoot);
+		new TreeIcon(grade);
 		gradePanel.add(grade);
 		menu.add(gradePanel, new GBC(0, 5, 1, 3).setFill(GBC.BOTH).setWeight(1, 3));
 	}
@@ -89,6 +90,7 @@ public class AppJFrame extends JFrame{
 		documentWrite = new DefaultMutableTreeNode("文档填写");
 		documentRoot.add(documentWrite);
 		document = new JTree(documentRoot);
+		new TreeIcon(document);
 		documentPanel.add(document);
 		menu.add(documentPanel, new GBC(0, 9, 1, 2).setFill(GBC.BOTH).setWeight(1, 2));
 	}
@@ -102,6 +104,7 @@ public class AppJFrame extends JFrame{
 		noticeCheck = new DefaultMutableTreeNode("查看通知");
 		noticeRoot.add(noticeCheck);
 		notice = new JTree(noticeRoot);
+		new TreeIcon(notice);
 		noticePanel.add(notice);
 		menu.add(noticePanel, new GBC(0, 12, 1, 2).setFill(GBC.BOTH).setWeight(1, 2));
 	}
@@ -115,6 +118,7 @@ public class AppJFrame extends JFrame{
 		employCheck = new DefaultMutableTreeNode("就业信息查询");
 		employRoot.add(employCheck);
 		employ = new JTree(employRoot);
+		new TreeIcon(employ);
 		employPanel.add(employ);
 		menu.add(employPanel, new GBC(0, 14, 1, 2).setFill(GBC.BOTH).setWeight(1, 2));
 	}
@@ -131,6 +135,7 @@ public class AppJFrame extends JFrame{
 		lifeRoot.add(card);
 		lifeRoot.add(elec);
 		life = new JTree(lifeRoot);
+		new TreeIcon(life);
 		lifePanel.add(life);
 		menu.add(lifePanel, new GBC(0, 16, 1, 3).setFill(GBC.BOTH).setWeight(1, 3));
 	}
@@ -144,6 +149,7 @@ public class AppJFrame extends JFrame{
 		forumCheck = new DefaultMutableTreeNode("浏览论坛");
 		forumRoot.add(forumCheck);
 		forum = new JTree(forumRoot);
+		new TreeIcon(forum);
 		forumPanel.add(forum);
 		menu.add(forumPanel, new GBC(0, 20, 1, 2).setFill(GBC.BOTH).setWeight(1, 2));
 	}
@@ -157,6 +163,7 @@ public class AppJFrame extends JFrame{
 		inforManage = new DefaultMutableTreeNode("个人信息管理");
 		inforRoot.add(inforManage);
 		infor = new JTree(inforRoot);
+		new TreeIcon(infor);
 		inforPanel.add(infor);
 		menu.add(inforPanel, new GBC(0, 23, 1, 2).setFill(GBC.BOTH).setWeight(1, 2));
 	}
